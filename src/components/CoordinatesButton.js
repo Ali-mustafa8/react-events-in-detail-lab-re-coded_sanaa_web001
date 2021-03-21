@@ -1,15 +1,11 @@
 import React from 'react';
-export deafult CoordinatesButton extends React.Component{
-  
-  const array=[]
-  render(){
-    
-    return(
-      
-      
-      );
-      
-      
+
+export default class CoordinatesButton extends React.Component {
+  handleClick = event => {
+    this.props.onReceiveCoordinates([event.clientX, event.clientY]);
+  };
+
+  render() {
+    return <button onClick={this.handleClick}>Coords</button>;
   }
-  
 }
