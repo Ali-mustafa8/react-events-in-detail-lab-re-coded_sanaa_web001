@@ -1,2 +1,13 @@
 import React from 'react';
-export deafult 
+export deafult CoordinatesButton extends React.Component{
+  
+  render(){
+    
+    return(
+      
+      );
+      
+      
+  }
+  
+}
